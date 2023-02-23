@@ -15,10 +15,13 @@
     <li></li>
   </ul>
   <script>
+
     let menu=document.getElementById('menu');
       for(i=0;i<menu.children.length;i++){
-      menu.children[i].style.backgroundColor="blue";
-    }
+      menu.children[i].style.cssText="width:100px; background-color:#123456; color:#554851; font-size:"+[i+20]+"px";
+      menu.children[i].innerHTML="items-"+[i+1];
+    }//짝수만 다른 색상 적용해주고 싶은데 for 두번쓰는거보단 if문이 낫겠징..?
+    
 
   </script>
 </body>
